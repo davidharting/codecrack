@@ -1,4 +1,8 @@
 # This is actually here to configure the GitHub viewer
 # By default, tabs display as 8 spaces in GitHub
+
+root = true
+
+[*.go]
 indent_style = tab
 indent_size = 2
