@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 )
 
 type node struct {
@@ -58,9 +57,7 @@ func NewSinglyLinkedList() SinglyLinkedList {
 // Append adds an element to the end of a list
 func (l *SinglyLinkedList) Append(value int) {
 	if l.IsEmpty() {
-		fmt.Printf("l.isEmpty(). Assigning first.\n")
 		l.first = &node{value, nil}
-		fmt.Printf("l.first %v\n", l.first)
 	} else {
 		n := l.last()
 		n.next = &node{value, nil}
